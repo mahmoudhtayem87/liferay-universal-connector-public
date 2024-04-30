@@ -1,0 +1,15 @@
+assemble:
+  - from: build/static
+    into: static
+liferay-universal-connector-custom-element:
+  friendlyURLMapping: liferay-universal-connector-custom-element
+  htmlElementName: liferay-universal-connector-custom-element
+  instanceable: false
+  name: Liferay Universal Connector
+  portletCategoryName: category.client-extensions
+  type: customElement
+  panelAppOrder: 700
+  panelCategoryKey: applications_menu.applications.custom.apps
+  urls:
+    - js/main.*.js
+  useESM: true

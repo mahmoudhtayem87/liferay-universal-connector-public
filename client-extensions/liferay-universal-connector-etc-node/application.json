@@ -1,0 +1,18 @@
+{
+	"com.liferay.lxc.dxp.domains": "localhost:8080",
+	"com.liferay.lxc.dxp.main.domain": "localhost:8080",
+	"com.liferay.lxc.dxp.server.protocol": "http",
+	"liferay.oauth.application.external.reference.codes": ["liferay.universal.connector.etc.node.oauth.application.server","liferay.universal.connector.etc.node.oauth.application.user.agent"],
+	"liferay.universal.connector.etc.node.oauth.application.server.oauth2.headless.server.client.id": "id-4c7590ff-83a9-5a6d-f857-a7c83b187a8",
+	"liferay.universal.connector.etc.node.oauth.application.server.oauth2.headless.server.client.secret": "secret-a2206a9d-54e8-b9a1-b321-8e6041e64118",
+	"liferay.universal.connector.etc.node.oauth.application.server.oauth2.token.uri": "/o/oauth2/token",
+	"liferay.universal.connector.etc.node.oauth.application.user.agent.oauth2.jwks.uri": "/o/oauth2/jwks",
+	"liferay.universal.connector.etc.node.oauth.application.user.agent.oauth2.user.agent.client.id": "id-40c0ba12-993d-73d2-d965-10c8f99072",
+	"liferay.user.account": "/o/headless-admin-user/v1.0/user-accounts",
+	"proxy.objects.cache.duration": "1",
+	"proxy.objects.end.point": "/o/c/t4t14proxyobjectdefinitions",
+	"ready.path": "/ready",
+	"server.port": 8050
+}
+
+

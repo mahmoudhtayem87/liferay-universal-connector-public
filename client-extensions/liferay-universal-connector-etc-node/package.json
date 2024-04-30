@@ -1,0 +1,20 @@
+{
+	"author": {
+		"name": "Mahmoud Hussein Tayem"
+	},
+	"license": "LGPL",
+	"main": "index.js",
+	"name": "liferay-universal-connector-etc-node",
+	"scripts": {
+		"start": "node index.js",
+		"build-from-source": "node ./build-from-source.js",
+		"build-win": "node ./compile-win.js",
+		"build-mac": "node ./compile-macos.js",
+		"build-linux": "node ./compile-linux.js"
+	},
+	"version": "1.0.0",
+	"devDependencies": {
+		"fs": "^0.0.1-security",
+		"webpack-cli": "^5.1.4"
+	}
+}

@@ -1,0 +1,352 @@
+{
+	"configuration": {
+		"className": "com.liferay.object.admin.rest.dto.v1_0.ObjectDefinition",
+		"parameters": {
+			"containsHeaders": "true",
+			"createStrategy": "UPSERT",
+			"importStrategy": "ON_ERROR_FAIL",
+			"taskItemDelegateName": "DEFAULT",
+			"updateStrategy": "UPDATE"
+		}
+	},
+	"items": [
+		{
+			"accountEntryRestricted": false,
+			"active": true,
+			"defaultLanguageId": "en_US",
+			"enableComments": false,
+			"enableLocalization": false,
+			"enableObjectEntryHistory": false,
+			"externalReferenceCode": "T4T14_PROXY_OBJECT_DEFINITION",
+			"label": {
+				"en_US": "Proxy Object Definition"
+			},
+			"modifiable": true,
+			"name": "T4T14ProxyObjectDefinition",
+			"objectActions": [
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "function#liferay-universal-connector-connect-etc-node",
+					"errorMessage": {},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "Connect On Create"
+					},
+					"externalReferenceCode": "4237dc93-6896-fb11-7900-c89f924aa2ed",
+					"system": false,
+					"objectActionTriggerKey": "onAfterAdd",
+					"name": "connectOnCreate",
+					"parameters": {},
+					"status": {
+						"label_i18n": "Never Ran",
+						"code": 0,
+						"label": "never-ran"
+					}
+				},
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "function#liferay-universal-connector-disconnect-etc-node",
+					"errorMessage": {},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "Disconnect On Delete"
+					},
+					"externalReferenceCode": "757a2358-2f14-7c34-3e56-10f44925b1f5",
+					"system": false,
+					"objectActionTriggerKey": "onAfterDelete",
+					"name": "disconnectOnDelete",
+					"parameters": {},
+					"status": {
+						"label_i18n": "Never Ran",
+						"code": 0,
+						"label": "never-ran"
+					}
+				},
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "function#liferay-universal-connector-connect-etc-node",
+					"errorMessage": {
+						"en_US": "Error while connecting!"
+					},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "Connect"
+					},
+					"externalReferenceCode": "236227a9-7e74-6e0e-5734-6116b57c15ef",
+					"system": false,
+					"objectActionTriggerKey": "standalone",
+					"name": "connect",
+					"parameters": {},
+					"status": {
+						"label_i18n": "Success",
+						"code": 1,
+						"label": "success"
+					}
+				},
+				{
+					"conditionExpression": "",
+					"objectActionExecutorKey": "function#liferay-universal-connector-disconnect-etc-node",
+					"errorMessage": {
+						"en_US": "Error while disconnecting!"
+					},
+					"active": true,
+					"description": "",
+					"label": {
+						"en_US": "Disconnect"
+					},
+					"externalReferenceCode": "58edb0c9-a8f8-e673-85a6-bd24e50c2ef0",
+					"system": false,
+					"objectActionTriggerKey": "standalone",
+					"name": "disconnect",
+					"parameters": {},
+					"status": {
+						"label_i18n": "Success",
+						"code": 1,
+						"label": "success"
+					}
+				}
+			],
+			"objectFields": [
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "d4d3a7c0-d922-4e60-bf13-a74a3dfa1a6e",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Author"
+					},
+					"localized": false,
+					"name": "creator",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "Date",
+					"businessType": "Date",
+					"externalReferenceCode": "a658b619-2c80-7d28-f9a2-97d2fbe55f14",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Create Date"
+					},
+					"localized": false,
+					"name": "createDate",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "Date",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "ecb50f74-4fbc-83c2-565b-ec3d0237974e",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "External Reference Code"
+					},
+					"localized": false,
+					"name": "externalReferenceCode",
+					"objectFieldSettings": [
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "Long",
+					"businessType": "LongInteger",
+					"externalReferenceCode": "dd8a40c1-9d62-7701-5ef3-05708d85ca1e",
+					"indexed": true,
+					"indexedAsKeyword": true,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "ID"
+					},
+					"localized": false,
+					"name": "id",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "Long",
+					"unique": false
+				},
+				{
+					"DBType": "Date",
+					"businessType": "Date",
+					"externalReferenceCode": "1299f900-aafd-a830-6a05-c3bb48848bc3",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Modified Date"
+					},
+					"localized": false,
+					"name": "modifiedDate",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "Date",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "ca3fdfbd-70ac-06a3-15d0-6473c6edd5c9",
+					"indexed": false,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "",
+					"label": {
+						"en_US": "Status"
+					},
+					"localized": false,
+					"name": "status",
+					"objectFieldSettings": [
+					],
+					"readOnly": "true",
+					"readOnlyConditionExpression": "",
+					"required": false,
+					"state": false,
+					"system": true,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "3d9b42b8-2134-5474-261e-2920e32310cd",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Name"
+					},
+					"localized": false,
+					"name": "name",
+					"objectFieldSettings": [
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": true,
+					"state": false,
+					"system": false,
+					"type": "String",
+					"unique": false
+				},
+				{
+					"DBType": "Clob",
+					"businessType": "LongText",
+					"externalReferenceCode": "e8bffd45-4d78-c83c-e17f-d6aa4d2cb06e",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Configuration"
+					},
+					"localized": false,
+					"name": "configuration",
+					"objectFieldSettings": [
+						{
+							"name": "showCounter",
+							"value": false
+						}
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": true,
+					"state": false,
+					"system": false,
+					"type": "Clob",
+					"unique": false
+				},
+				{
+					"DBType": "String",
+					"businessType": "Text",
+					"externalReferenceCode": "8c252068-2306-a35c-2a82-da1a5dd7ceb5",
+					"indexed": true,
+					"indexedAsKeyword": false,
+					"indexedLanguageId": "en_US",
+					"label": {
+						"en_US": "Proxy Object Name"
+					},
+					"localized": false,
+					"name": "proxyObjectName",
+					"objectFieldSettings": [
+					],
+					"readOnly": "false",
+					"readOnlyConditionExpression": "",
+					"required": true,
+					"state": false,
+					"system": false,
+					"type": "String",
+					"unique": false
+				},{
+					"indexed": true,
+					"localized": false,
+					"objectFieldSettings": [],
+					"readOnly": "false",
+					"DBType": "Boolean",
+					"label": {
+						"en_US": "Connected"
+					},
+					"type": "Boolean",
+					"required": false,
+					"externalReferenceCode": "e96b981f-d5a3-e251-e5e6-8713d5468727",
+					"indexedAsKeyword": false,
+					"system": false,
+					"indexedLanguageId": "",
+					"unique": false,
+					"name": "connected",
+					"state": false,
+					"businessType": "Boolean",
+					"readOnlyConditionExpression": ""
+				}
+			],
+			"parameterRequired": false,
+			"pluralLabel": {
+				"en_US": "Proxy Object Definitions"
+			},
+			"portlet": false,
+			"restContextPath": "/o/c/t4t14proxyobjectdefinitions",
+			"scope": "company",
+			"status": {
+				"code": 0,
+				"label": "approved",
+				"label_i18n": "Approved"
+			},
+			"system": false,
+			"titleObjectFieldName": "id"
+		}
+	]
+}

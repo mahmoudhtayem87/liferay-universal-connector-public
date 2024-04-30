@@ -1,0 +1,63 @@
+{
+  "name": "liferay-universal-connector-custom-element",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@clayui/alert": "^3.111.0",
+    "@clayui/button": "^3.111.0",
+    "@clayui/core": "^3.109.0",
+    "@clayui/css": "^3.110.0",
+    "@clayui/drop-down": "^3.111.0",
+    "@clayui/empty-state": "^3.111.0",
+    "@clayui/form": "^3.109.0",
+    "@clayui/icon": "^3.106.1",
+    "@clayui/list": "^3.111.0",
+    "@clayui/loading-indicator": "^3.111.0",
+    "@clayui/modal": "^3.109.0",
+    "@clayui/multi-step-nav": "^3.111.0",
+    "@clayui/pagination": "^3.111.0",
+    "@clayui/pagination-bar": "^3.111.0",
+    "@clayui/panel": "^3.110.0",
+    "@clayui/tabs": "^3.109.0",
+    "@clayui/toolbar": "^3.111.0",
+    "axios": "^1.6.7",
+    "concat": "^1.0.3",
+    "express": "^4.18.2",
+    "formik": "^2.4.5",
+    "fs-extra": "^11.2.0",
+    "moment": "^2.30.1",
+    "path": "^0.12.7",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "swagger-client": "^3.25.0",
+    "uuid": "^9.0.1",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lr-build": "react-scripts build && node ./build.js",
+    "lr-publish": "npm run lr-build && node ./publish.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

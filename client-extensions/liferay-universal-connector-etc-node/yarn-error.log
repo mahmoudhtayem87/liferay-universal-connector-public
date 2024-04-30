@@ -1,0 +1,5 @@
+echo '{ "main": "index.js", "output": "sea-prep.blob" }' > sea-config.json 
+
+node --experimental-sea-config sea-config.json 
+
+cp $(command -v node) index 
